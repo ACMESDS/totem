@@ -154,6 +154,9 @@ openssl rsa -noout -modulus -in privateKey.key | openssl md5
 # notepadqq
 wget -O /etc/yum.repos.d/sea-devel.repo "http://sea.fedorapeople.org/sea-devel.repo"
 yum install notepadqq
+# must explictly add epel repo and update for centos7.7 before qq install 
+yum install -y epel-release
+yum -y update
 
 ######
 > move from node5 to node8
